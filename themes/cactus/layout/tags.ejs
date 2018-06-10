@@ -1,0 +1,31 @@
+<div class="archives-wrap" style="margin: 0px;">
+    <div class="row">
+    <div class="archives-tags-wrap">
+    <% if(site.tags.length) { %>
+        <blockquote>
+        <%- tagcloud({min_font: 14, max_font: 28}) %>
+        </blockquote>
+    <% } %>
+</div>
+
+        <!-- 
+        <% site.tags.sort('name').map(function(tag){  %>
+        <div class="archives-wrap">
+            <span class="tag-h1"><a href="<%- url_for("tags/" + tag.name) %>"># <%= tag.name %></a></span>
+            <ul class="post-list">
+                <% tag.posts.sort('-date').map(function(post, i){  %>
+                    <%- partial('_partial/archive-post', {post: post, index: true}) %>
+                    <% if (post.subtitle && post.subtitle.length) { %>
+                        <h3 class="post-subtitle">
+                            <%- post.subtitle %>
+                        </h3>
+                    <% } %>
+                <% }) %>
+            </ul>
+        </div>
+        <% }) %>
+        -->
+
+
+    </div>
+</div>

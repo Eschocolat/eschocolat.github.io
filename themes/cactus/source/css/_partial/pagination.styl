@@ -1,0 +1,39 @@
+.pagination
+  display: inline-block
+  margin-top: 2rem
+  width: 100%
+  text-align: center
+
+  .page-number
+    color: #999
+    font-size: .8rem
+    display: inline-block
+    height: 1.5rem
+    line-height: 1.5rem
+    padding: 0 .25rem
+    margin: 0 .25rem
+    border-radius: 0
+    border-color: transparent
+    -webkit-transition: border-color .3s ease,color .3s ease
+    transition: border-color .3s ease,color .3s ease
+    &.current, &:hover
+      border-bottom: 2px solid
+      color: #454545
+    &.current
+      font-weight: bold
+
+  a
+    padding: 4px 6px
+    border-radius: 5px
+    // background-color: $color-accent-1
+    background-image: none
+    color: $color-text
+    text-decoration: none
+  .extend
+    color: #999
+
+  a:hover
+    background-image: none
+
+  a:hover:not(.active)
+    color: $color-accent-2

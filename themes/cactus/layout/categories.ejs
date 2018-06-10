@@ -1,0 +1,35 @@
+<div id="archive">
+<!--
+    <% parentObj = site.categories.sort('name').reduce(function(before, current) {
+        if (current.parent) {
+            if (!before[current.parent]) {
+                before[current.parent] = {};
+            }
+            if (!before[current.parent].child) {
+                before[current.parent].child = [current]; 
+            } else {
+                before[current.parent].child.push(current); 
+            }
+        }
+        return before;
+    }, {}) %>
+    -->
+
+    <% site.categories.sort('name')
+    .filter(function(category){return !category.parent})
+    .map(function(category){  %>
+        <div class="archives-wrap">
+            <h2 class="ar-category-title"><a href="<%- url_for(category.path) %>"><%= category.name %></a></h2>
+            <ul class="post-list">
+                <% category.posts.sort('-date').map(function(post, i){  %>
+                    <%- partial('_partial/archive-post', {post: post, index: true}) %>
+                    <% if (post.subtitle && post.subtitle.length) { %>
+                        <h3 class="post-subtitle">
+                            <%- post.subtitle %>
+                        </h3>
+                    <% } %>
+                <% }) %>
+            </ul>
+        </div>
+    <% }) %>
+</div>

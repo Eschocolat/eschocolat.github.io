@@ -1,0 +1,28 @@
+/**
+ * theme setting
+ */
+$theme-color-back = $color-background       // background
+$theme-color-primary = #e62739  //
+$theme-color-default = #173e43      // text
+$theme-color-accent = #9068be      // h1 h2 h3 ...
+$theme-color-sub = #71A2B6      // name tag date
+$page-border-width = 4px
+
+// by @sergodeeva (https://github.com/sergodeeva)
+//$color-background = #e1e8f0
+$color-background = #fff
+//$color-body-background = #fb9692
+$color-body-background = $theme-color-back
+$color-footer-mobile-1 = darken($color-background, 2%)
+$color-footer-mobile-2 = darken($color-background, 10%)
+$color-background-code = darken($color-background, 2%)
+$color-border = #666
+$color-meta = #666
+$color-meta-code = lighten($color-meta, 10%)
+$color-link = rgba(212, 128, 170, 1)
+$color-text = $theme-color-default
+$color-accent-3 = $theme-color-sub // name, tag, date
+$color-accent-2 = $theme-color-accent
+$color-accent-1 = $theme-color-primary
+$color-quote = $color-accent-1
+$highlight = hexo-config("highlight") || "atelier-cave-light"

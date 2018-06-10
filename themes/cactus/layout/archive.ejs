@@ -1,0 +1,31 @@
+<div id="archive">
+  <% if (is_archive()) { %>
+    <!--if page.month
+      h2 Archives: #{page.month}/#{page.year}
+    else if page.year
+      h2 Archives: #{page.year}
+    else
+      h2 Archives-->
+  <% } else if (is_tag()) { %>
+    <h1># <%- page.tag %></h1>
+  <% } else if (is_category()) { %>
+    <h1>Category: <%- page.category %></h1>
+  <% } %>
+  <ul class="post-list">
+    <% var year = 0 %>
+    <% var change = false %>
+    <% page.posts.sort('date', 'desc').each(function(post) { %>
+      <% var itemYear = date(post.date, 'YYYY') - 0 %>
+      <% change = year !== itemYear %>
+      <% year = change ? itemYear : year %>
+      <% if (change) { %>
+        <h2 class="ca-year"><%= year %></h2>
+      <% } %>
+      <li class="post-item">
+        <%- partial('_partial/post/date', { post: post, class_name: 'meta' }) %>
+        <span><%- partial('_partial/post/title', { post: post, index: true, class_name: '' }) %></span>
+      </li>
+    <% }); %>
+  </ul>
+  <%- partial('_partial/pagination') %>
+</div>

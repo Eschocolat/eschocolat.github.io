@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html<%= config.language ? " lang=" + config.language.substring(0, 2) : "" %>>
+<%- partial('_partial/head') %>
+<!--<body class="max-width mx-auto px3">-->
+<body>
+<div class="page">
+    <div class="content-wrapper max-width mx-auto px3">
+        <div class="content index my4">
+            <% if (is_post()) { %>
+            <%- partial('_partial/post_header') %>
+            <% } %>
+            <% if (!is_post()) { %>
+            <%- partial('_partial/header') %>
+            <% } %>
+            <%- body %>
+        </div>
+        <% if (is_post()) { %>
+        <% } %>
+        <%- partial('_partial/footer') %>
+    </div>
+</div>
+</body>
+</html>
+<%- partial('_partial/styles') %>
+<%- partial('_partial/scripts') %>

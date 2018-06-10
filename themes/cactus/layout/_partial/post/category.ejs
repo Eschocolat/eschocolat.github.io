@@ -1,0 +1,13 @@
+<div class="meta">
+
+<% if (post.categories && post.categories.length) { %>
+    <% post.categories.data.map(function(category, index) { %>
+        <a class=post-list__item__meta__link href="<%= url_for(category.path) %>">
+            <%= category.name %>
+        </a>
+        <% if (index < post.categories.data.length - 1) { %>
+            <span class="post-list__item__meta__label">></span>
+        <% } %>
+    <% }) %>
+<% } %>
+</div>
