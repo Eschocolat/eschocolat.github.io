@@ -2,10 +2,20 @@ article
   header
     .posttitle
       margin-top: 0
-      margin-bottom: 0
+      margin-bottom: 3.8rem
       text-transform: none
-      font-size: 1.5em
+      font-size: 1.35em
       line-height: 1.25
+
+    .category-meta
+      margin-bottom: 0
+      a
+        font-size: .8rem
+        font-weight: 700
+        color: $color-accent-2
+        background: none
+        &:hover
+          underline(5px, $color-accent-2)
 
     .meta
       margin-top: 0
@@ -119,14 +129,44 @@ article
 
 .article-tag
   .tag-link
-    &:before
-      content: "#"
+    // &:before
+    //   content: "#"
 
     underline(10px, $color-link)
 
-@media (min-width: 480px)
-  .article-tag
-    display: inline
+// @media (min-width: 480px)
+//   .article-tag
+//     display: inline
 
-    &:before
-      content: "|"
+//     &:before
+//       content: "|"
+
+.post-meta
+  margin-top: 4rem
+  ul
+    margin: 0
+    padding: 0
+    list-style: none
+    // display: -webkit-box
+    // display: -ms-flexbox
+    // display: flex
+    -webkit-box-pack: justify
+    -ms-flex-pack: justify
+    justify-content: space-between
+    li
+      color: #aaa
+      letter-spacing: -0.01em
+      font-size: 0.8rem
+      &:not(:last-child)
+        margin-bottom: 2rem
+      a
+        color: #aaa
+    div
+      font-weight: 700
+    // &:before
+    //   content: ""
+    //   display: block
+    //   width: 100%
+    //   min-width: 30px
+    //   border-top: 1px solid #ddd
+    //   margin-bottom: 1em

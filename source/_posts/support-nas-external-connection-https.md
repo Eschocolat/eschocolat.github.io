@@ -23,7 +23,7 @@ Let's Encrypt 인증서를 발급 받는 자세한 방법은 Outsider님의 글�
 
 **[Lets' Encrypt로 무료로 HTTPS 지원하기, Outsider's Dev Story](https://blog.outsider.ne.kr/1178)**
 
-## <a name="nginx-ssl"></a>NGINX로 SSL 리버스 프록시 설정
+## <a name="nginx-ssl"></a>SSL 리버스 프록시 설정
 알아 보니 NGINX로 SSL 리버스 프록시를 지원하는 게 가장 빠르고 쉬운 방법 같았다.
 > 리버스 프록시란  
 > 클라이언트는 프록시로 요청하고,  
@@ -47,7 +47,7 @@ server {
 server {
     ...
     ssl_protocols TLSv1 TLSv1.1 TLSv1.2;
-    ssl_ciphers 'ECDHE-ECDSA-CHACHA20-POLY1305:ECDHE-RSA-CHACHA20-POLY1305:ECDHE-ECDSA-AES128-GCM-SHA256:ECDHE-RSA-AES128-GCM-SHA256:ECDHE-ECDSA-AES256-GCM-SHA384:ECDHE-RSA-AES256-GCM-SHA384:DHE-RSA-AES128-GCM-SHA256:DHE-RSA-AES256-GCM-SHA384:ECDHE-ECDSA-AES128-SHA256:ECDHE-RSA-AES128-SHA256:ECDHE-ECDSA-AES128-SHA:ECDHE-RSA-AES256-SHA384:ECDHE-RSA-AES128-SHA:ECDHE-ECDSA-AES256-SHA384:ECDHE-ECDSA-AES256-SHA:ECDHE-RSA-AES256-SHA:DHE-RSA-AES128-SHA256:DHE-RSA-AES128-SHA:DHE-RSA-AES256-SHA256:DHE-RSA-AES256-SHA:ECDHE-ECDSA-DES-CBC3-SHA:ECDHE-RSA-DES-CBC3-SHA:EDH-RSA-DES-CBC3-SHA:AES128-GCM-SHA256:AES256-GCM-SHA384:AES128-SHA256:AES256-SHA256:AES128-SHA:AES256-SHA:DES-CBC3-SHA:!DSS';
+    ssl_ciphers 'EDES-EFSF-EFFD~~~~~~~~~~~~~~~~~~~~~~~~~~';
     ssl_prefer_server_ciphers on;
 }
 ```
@@ -139,7 +139,7 @@ server {
 
     # intermediate configuration. tweak to your needs.
     ssl_protocols TLSv1 TLSv1.1 TLSv1.2;
-    ssl_ciphers 'ECDHE-ECDSA-CHACHA20-POLY1305:ECDHE-RSA-CHACHA20-POLY1305:ECDHE-ECDSA-AES128-GCM-SHA256:ECDHE-RSA-AES128-GCM-SHA256:ECDHE-ECDSA-AES256-GCM-SHA384:ECDHE-RSA-AES256-GCM-SHA384:DHE-RSA-AES128-GCM-SHA256:DHE-RSA-AES256-GCM-SHA384:ECDHE-ECDSA-AES128-SHA256:ECDHE-RSA-AES128-SHA256:ECDHE-ECDSA-AES128-SHA:ECDHE-RSA-AES256-SHA384:ECDHE-RSA-AES128-SHA:ECDHE-ECDSA-AES256-SHA384:ECDHE-ECDSA-AES256-SHA:ECDHE-RSA-AES256-SHA:DHE-RSA-AES128-SHA256:DHE-RSA-AES128-SHA:DHE-RSA-AES256-SHA256:DHE-RSA-AES256-SHA:ECDHE-ECDSA-DES-CBC3-SHA:ECDHE-RSA-DES-CBC3-SHA:EDH-RSA-DES-CBC3-SHA:AES128-GCM-SHA256:AES256-GCM-SHA384:AES128-SHA256:AES256-SHA256:AES128-SHA:AES256-SHA:DES-CBC3-SHA:!DSS';
+    ssl_ciphers 'EDES-EFSF-EFFD~~~~~~~~~~~~~~~~~~~~~~~~~~';
     ssl_prefer_server_ciphers on;
 
     # HSTS (ngx_http_headers_module is required) (15768000 seconds = 6 months)
@@ -160,6 +160,7 @@ server {
 
 기타 설정은 NGINX의 SSL 설정을 만들어주는 <u>[Mozilla SSL Configuration Generator](https://mozilla.github.io/server-side-tls/ssl-config-generator/)</u>를 사용했다.  
 서버를 실행하면 외부 접속했을 때 기분 좋은 녹색 자물쇠 표시를 볼 수 있다.  
+
 ![https](./https.png)
 
 NAS https 설정을 하느라 꽤 오랫동안 삽질을 했다.  

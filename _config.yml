@@ -8,14 +8,14 @@ subtitle:
 description: 글쓰는 개발자. 꿈꾸는 일상 여행자.
 keywords:
 author: eschocolat
-language: ko
+language: en
 timezone: Asia/Seoul
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
 url: https://eschocolat.me
 root: /
-permalink: :year/:month/:day/:title/
+permalink: :title/
 permalink_defaults:
 
 # Directory
