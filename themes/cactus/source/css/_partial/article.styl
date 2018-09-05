@@ -10,7 +10,9 @@ article
     .category-meta
       margin-bottom: 0
       a
-        font-size: .8rem
+        font-family: $font-family-head
+        font-size: .84rem
+        letter-spacing: .03em
         font-weight: 700
         color: $color-accent-2
         background: none
@@ -34,14 +36,17 @@ article
       display: inline
 
   .content
-    h2:before
-      position: absolute
-      top: -4px
-      left: -1rem
-      color: $color-accent-1
-      content: "#"
-      font-weight: bold
-      font-size: 1.2rem
+    h2
+      @media (max-width: 479px)
+        left: 15px
+      &:before
+        position: absolute
+        top: -4px
+        left: -1rem
+        color: $color-accent-1
+        content: "#"
+        font-weight: bold
+        font-size: 1.2rem
 
     img, video
       display: block

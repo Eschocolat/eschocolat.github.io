@@ -3,14 +3,27 @@
     padding: 0
 
     .post-item
-      margin-bottom: 1rem
+      margin-bottom: .5rem
       margin-left: 0
       list-style-type: none
+      font-family: $font-family-head
+      letter-spacing: .03em
+      &-category
+        min-width: 55px
+        margin-right: 1rem
+        a
+          letter-spacing: 0.03em;
+          font-size: 0.85rem;
+          font-weight: 700;
+          color: $color-accent-2
+          background: none
+          &:hover
+            underline(5px, $color-accent-2)
 
       .meta
         display: block
-        margin-right: 16px
-        min-width: 100px
+        margin-right: 8px
+        min-width: 70px
         color: $color-meta
         font-size: 14px
 

@@ -21,11 +21,8 @@
       <% if (change) { %>
         <h2 class="ca-year"><%= year %></h2>
       <% } %>
-      <li class="post-item">
-        <%- partial('_partial/post/date', { post: post, class_name: 'meta', date_format: null }) %>
-        <span><%- partial('_partial/post/title', { post: post, index: true, class_name: '' }) %></span>
-      </li>
+      <%- partial('_partial/archive-post', {post: post, index: true, showCategory: is_archive()}) %>
     <% }); %>
   </ul>
   <%- partial('_partial/pagination') %>
-</div>
+</div

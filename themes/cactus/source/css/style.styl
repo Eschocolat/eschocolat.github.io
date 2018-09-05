@@ -10,6 +10,10 @@ global-reset()
 *, *:before, *:after
   box-sizing: border-box
 
+::selection
+  color: #FFFFFF
+  background-color: $color-accent-3
+
 html
   height: 100%
   font-size: 18px
@@ -32,7 +36,7 @@ body
   font-weight: 400
   font-size: $font-size
   font-family: $font-family-body
-  // line-height: $line-height
+  line-height: $line-height
   text-rendering: geometricPrecision
 
   antialias()
@@ -136,7 +140,7 @@ body
 .max-width
   max-width: $page-width
 
-@media (max-width: 480px)
+@media (max-width: 479px)
   // smaller margins at smaller screen widths
   .px3
     padding-right: 1rem
@@ -327,7 +331,9 @@ ul.category-list
   padding: 0
   list-style: none
   a
-    font-size: .8rem
+    font-family: $font-family-head
+    letter-spacing: .03em
+    font-size: .85rem
     font-weight: 700
     color: $color-accent-2
     background: none
@@ -339,17 +345,18 @@ ul.category-list
   li.category-list-item
     overflow: hidden
     width: 100%
+    margin-left: 1rem
   .category-list-count
-    font-size: .65rem
+    font-size: .7rem
     padding-left: .5em
   .category-list-count:before 
     content: "("
   .category-list-count:after 
     content: ")"
-  li:before
+/*  li:before
     float: left
     padding-right: .25rem
-    content: "-"
+    content: "-"*/
 
 article .content .eschocolat-profile > img
   border-radius: 50%

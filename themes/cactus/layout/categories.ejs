@@ -22,7 +22,7 @@
             <h2 class="ar-category-title"><a href="<%- url_for(category.path) %>"><%= category.name %></a></h2>
             <ul class="post-list">
                 <% category.posts.sort('-date').map(function(post, i){  %>
-                    <%- partial('_partial/archive-post', {post: post, index: true}) %>
+                    <%- partial('_partial/archive-post', {post: post, index: true, showCategory: false}) %>
                     <% if (post.subtitle && post.subtitle.length) { %>
                         <h3 class="post-subtitle">
                             <%- post.subtitle %>

@@ -45,7 +45,7 @@
         <h2 class="index-year"><%= year %></h2>
       <% } %>
       -->
-      <%- partial('_partial/archive-post', { post: post }) %>
+      <%- partial('_partial/archive-post', { post: post, showCategory: true }) %>
     <% }); %>
   </ul>
   <%- partial('_partial/pagination') %>

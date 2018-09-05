@@ -18,9 +18,9 @@ title: about
 간략한 이력
 -----------------------
 
-- **대학교**에서 _컴퓨터공학_을 전공했습니다.
-- 금융 솔루션 기업 **시루정보**에서 _인턴 개발자_로 일했습니다.
-- 스타트업 **TeamDST**에서 _프론트엔드 개발자_로 일했습니다.
-- 휴식 겸 잠시 **유럽여행**을 다녀왔습니다.
-- **Emmental**에서 _시니어 소프트웨어 개발자_가 되기 위해 일하고 있습니다.
+- <span class="font-head">**대학교**</span>에서 <span class="font-head">**컴퓨터공학**</span>을 전공했습니다.
+- 금융 솔루션 기업 <span class="font-head">**시루정보**</span>에서 <span class="font-head">**인턴 개발자**</span>로 일했습니다.
+- 스타트업 <span class="font-head">**TeamDST**</span>에서 <span class="font-head">**프론트엔드 개발자**</span>로 일했습니다.
+- 휴식 겸 잠시 <span class="font-head">**유럽여행**</span>을 다녀왔습니다.
+- <span class="font-head">**Emmental**</span>에서 <span class="font-head">**시니어 소프트웨어 개발자**</span>가 되기 위해 일하고 있습니다.
 
