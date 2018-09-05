@@ -1,3 +1,7 @@
+.font-head {
+  font-family: "NanumBarunpen", "Nanum Gothic", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+  letter-spacing: 0.03em;
+}
 .inline {
   display: inline;
 }
@@ -318,28 +322,30 @@
 }
 .content h1,
 .content .h1 {
+  font-family: "NanumBarunpen", "Nanum Gothic", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
   display: block;
   margin-top: 2rem;
   margin-bottom: 1rem;
   color: #e62739;
-  letter-spacing: 0.01em;
+  letter-spacing: 0.04em;
   font-weight: 700;
   font-style: normal;
-  font-size: 1.2em;
+  font-size: 1.32em;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
 }
 .content h2,
 .content .h2 {
+  font-family: "NanumBarunpen", "Nanum Gothic", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
   position: relative;
   display: block;
   margin-top: 2rem;
   margin-bottom: 1rem;
   color: #9068be;
   text-transform: none;
-  letter-spacing: normal;
-  font-weight: bold;
-  font-size: 0.9rem;
+  letter-spacing: 0.03em;
+  font-weight: 700;
+  font-size: 1rem;
 }
 .content h3 {
   color: #9068be;
@@ -403,7 +409,7 @@
 .content ul,
 .content ol,
 .content dl {
-  line-height: 1.725;
+  line-height: 1.8;
 }
 .content ul ul,
 .content ol ul,
@@ -439,29 +445,49 @@
   text-decoration: none;
 }
 @font-face {
-  font-family: 'Spoqa Han Sans';
-  font-weight: 700;
-  src: local('Spoqa Han Sans Bold'), url("../lib/SpoqaHanSans/SpoqaHanSansBold.woff2") format('woff2'), url("../lib/SpoqaHanSans/SpoqaHanSansBold.woff") format('woff'), url("../lib/SpoqaHanSans/SpoqaHanSansBold.ttf") format('truetype');
-}
-@font-face {
-  font-family: 'Spoqa Han Sans';
+  font-family: 'NanumBarunpen';
+  font-style: normal;
   font-weight: 400;
-  src: local('Spoqa Han Sans Regular'), url("../lib/SpoqaHanSans/SpoqaHanSansRegular.woff2") format('woff2'), url("../lib/SpoqaHanSans/SpoqaHanSansRegular.woff") format('woff'), url("../lib/SpoqaHanSans/SpoqaHanSansRegular.ttf") format('truetype');
+  src: url("../lib/nanum-barunpen/NanumBarunpenR.woff2") format('woff2'), url("../lib/nanum-barunpen/NanumBarunpenR.woff") format('woff'), url("../lib/nanum-barunpen/NanumBarunpenR.ttf") format('truetype'), url("../lib/nanum-barunpen/NanumBarunpenR.otf") format('opentype'), url("../lib/nanum-barunpen/NanumBarunpenR.eot") format('embedded-opentype');
 }
 @font-face {
-  font-family: 'Spoqa Han Sans';
+  font-family: 'NanumBarunpen';
+  font-style: normal;
+  font-weight: 700;
+  src: url("../lib/nanum-barunpen/NanumBarunpenB.woff2") format('woff2'), url("../lib/nanum-barunpen/NanumBarunpenB.woff") format('woff'), url("../lib/nanum-barunpen/NanumBarunpenB.ttf") format('truetype'), url("../lib/nanum-barunpen/NanumBarunpenB.otf") format('opentype'), url("../lib/nanum-barunpen/NanumBarunpenB.eot") format('embedded-opentype');
+}
+@font-face {
+  font-family: 'NanumSquare';
+  font-weight: 400;
+  src: url("../lib/nanum-square/NanumSquareR.eot");
+  src: url("../lib/nanum-square/NanumSquareR.eot?#iefix") format('embedded-opentype'), url("../lib/nanum-square/NanumSquareR.woff") format('woff'), url("../lib/nanum-square/NanumSquareR.ttf") format('truetype');
+}
+@font-face {
+  font-family: 'NanumSquare';
+  font-weight: 700;
+  src: url("../lib/nanum-square/NanumSquareB.eot");
+  src: url("../lib/nanum-square/NanumSquareB.eot?#iefix") format('embedded-opentype'), url("../lib/nanum-square/NanumSquareB.woff") format('woff'), url("../lib/nanum-square/NanumSquareB.ttf") format('truetype');
+}
+@font-face {
+  font-family: 'NanumSquare';
+  font-weight: 800;
+  src: url("../lib/nanum-square/NanumSquareEB.eot");
+  src: url("../lib/nanum-square/NanumSquareEB.eot?#iefix") format('embedded-opentype'), url("../lib/nanum-square/NanumSquareEB.woff") format('woff'), url("../lib/nanum-square/NanumSquareEB.ttf") format('truetype');
+}
+@font-face {
+  font-family: 'NanumSquare';
   font-weight: 300;
-  src: local('Spoqa Han Sans Light'), url("../lib/SpoqaHanSans/SpoqaHanSansLight.woff2") format('woff2'), url("../lib/SpoqaHanSans/SpoqaHanSansLight.woff") format('woff'), url("../lib/SpoqaHanSans/SpoqaHanSansLight.ttf") format('truetype');
-}
-@font-face {
-  font-family: 'Spoqa Han Sans';
-  font-weight: 100;
-  src: local('Spoqa Han Sans Thin'), url("../lib/SpoqaHanSans/SpoqaHanSansThin.woff2") format('woff2'), url("../lib/SpoqaHanSans/SpoqaHanSansThin.woff") format('woff'), url("../lib/SpoqaHanSans/SpoqaHanSansThin.ttf") format('truetype');
+  src: url("../lib/nanum-square/NanumSquareL.eot");
+  src: url("../lib/nanum-square/NanumSquareL.eot?#iefix") format('embedded-opentype'), url("../lib/nanum-square/NanumSquareL.woff") format('woff'), url("../lib/nanum-square/NanumSquareL.ttf") format('truetype');
 }
 *,
 *:before,
 *:after {
   box-sizing: border-box;
+}
+::selection {
+  color: #fff;
+  background-color: #71a2b6;
 }
 html {
   height: 100%;
@@ -482,7 +508,8 @@ body {
   color: #173e43;
   font-weight: 400;
   font-size: 16px;
-  font-family: "Spoqa Han Sans", "Nanum Gothic", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+  font-family: "NanumSquare", "Nanum Gothic", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+  line-height: 1.7;
   text-rendering: geometricPrecision;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
@@ -610,9 +637,9 @@ body {
   }
 }
 .max-width {
-  max-width: 48rem;
+  max-width: 42rem;
 }
-@media (max-width: 480px) {
+@media (max-width: 479px) {
   .px3 {
     padding-right: 1rem;
     padding-left: 1rem;
@@ -639,7 +666,7 @@ body {
   letter-spacing: 0.01em;
   font-weight: 700;
   font-style: normal;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   line-height: 2rem;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
@@ -667,6 +694,7 @@ body {
   font-weight: 200;
   font-style: normal;
   font-size: 0.8rem;
+  margin-top: 0.2rem;
 }
 #header #nav ul {
   margin: 0;
@@ -675,6 +703,8 @@ body {
   line-height: 15px;
 }
 #header #nav ul a {
+  font-family: "NanumBarunpen", "Nanum Gothic", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+  font-size: 1rem;
   font-weight: 500;
   margin-right: 15px;
   color: color-accent-1;
@@ -705,7 +735,7 @@ body {
   filter: none;
   -webkit-filter: none;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 479px) {
   #header #title {
     display: table;
     margin-right: 5rem;
@@ -926,7 +956,7 @@ body {
     display: none !important;
   }
 }
-@media screen and (min-width: 1199px) {
+@media screen and (min-width: 1200px) {
   #header-post #actions {
     width: auto;
   }
@@ -1120,7 +1150,9 @@ article header .category-meta {
   margin-bottom: 0;
 }
 article header .category-meta a {
-  font-size: 0.8rem;
+  font-family: "NanumBarunpen", "Nanum Gothic", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+  font-size: 0.84rem;
+  letter-spacing: 0.03em;
   font-weight: 700;
   color: #9068be;
   background: none;
@@ -1146,6 +1178,11 @@ article header .author {
 }
 article header .postdate {
   display: inline;
+}
+@media (max-width: 479px) {
+  article .content h2 {
+    left: 15px;
+  }
 }
 article .content h2:before {
   position: absolute;
@@ -1276,14 +1313,33 @@ article .content .caption {
   padding: 0;
 }
 #archive .post-list .post-item {
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
   margin-left: 0;
   list-style-type: none;
+  font-family: "NanumBarunpen", "Nanum Gothic", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+  letter-spacing: 0.03em;
+}
+#archive .post-list .post-item-category {
+  min-width: 55px;
+  margin-right: 1rem;
+}
+#archive .post-list .post-item-category a {
+  letter-spacing: 0.03em;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #9068be;
+  background: none;
+}
+#archive .post-list .post-item-category a:hover {
+  background-image: linear-gradient(transparent, transparent 5px, #9068be 5px, #9068be);
+  background-position: bottom;
+  background-size: 100% 6px;
+  background-repeat: repeat-x;
 }
 #archive .post-list .post-item .meta {
   display: block;
-  margin-right: 16px;
-  min-width: 100px;
+  margin-right: 8px;
+  min-width: 70px;
   color: #666;
   font-size: 14px;
 }
@@ -1459,63 +1515,67 @@ article .content .caption {
   color: #173e43;
 }
 .highlight {
-  color: #585260;
-  background: #efecf4;
+  background: #474949;
+  color: #d1d9e1;
 }
 .highlight .code .comment,
 .highlight .code .quote {
-  color: #655f6d;
+  color: #969896;
+  font-style: italic;
+}
+.highlight .code .keyword,
+.highlight .code .selector-tag,
+.highlight .code .literal,
+.highlight .code .type,
+.highlight .code .addition {
+  color: #c9c;
+}
+.highlight .code .number,
+.highlight .code .selector-attr,
+.highlight .code .selector-pseudo {
+  color: #f99157;
+}
+.highlight .code .string,
+.highlight .code .doctag,
+.highlight .code .regexp {
+  color: #8abeb7;
+}
+.highlight .code .title,
+.highlight .code .name,
+.highlight .code .section,
+.highlight .code .built_in {
+  color: #b5bd68;
 }
 .highlight .code .variable,
 .highlight .code .template-variable,
-.highlight .code .attribute,
-.highlight .code .tag,
-.highlight .code .name,
-.highlight .code .regexp,
-.highlight .code .link,
 .highlight .code .selector-id,
-.highlight .code .selector-class {
-  color: #be4678;
+.highlight .code .class .title {
+  color: #fc6;
 }
-.highlight .code .number,
-.highlight .code .meta,
-.highlight .code .built_in,
-.highlight .code .builtin-name,
-.highlight .code .literal,
-.highlight .code .type,
-.highlight .code .params {
-  color: #aa573c;
+.highlight .code .section,
+.highlight .code .name,
+.highlight .code .strong {
+  font-weight: bold;
 }
-.highlight .code .string,
 .highlight .code .symbol,
-.highlight .code .bullet {
-  color: #2a9292;
-}
-.highlight .code .title,
-.highlight .code .section {
-  color: #576ddb;
-}
-.highlight .code .keyword,
-.highlight .code .selector-tag {
-  color: #955ae7;
-}
-.highlight .code .deletion,
-.highlight .code .addition {
-  color: #19171c;
-  display: inline-block;
-  width: 100%;
+.highlight .code .bullet,
+.highlight .code .subst,
+.highlight .code .meta,
+.highlight .code .link {
+  color: #f99157;
 }
 .highlight .code .deletion {
-  background-color: #be4678;
+  color: #dc322f;
 }
-.highlight .code .addition {
-  background-color: #2a9292;
+.highlight .code .formula {
+  background: #eee8d5;
+}
+.highlight .code .attr,
+.highlight .code .attribute {
+  color: #81a2be;
 }
 .highlight .code .emphasis {
   font-style: italic;
-}
-.highlight .code .strong {
-  font-weight: bold;
 }
 pre {
   overflow-x: auto;
@@ -1691,7 +1751,9 @@ ul.category-list {
   list-style: none;
 }
 ul.category-list a {
-  font-size: 0.8rem;
+  font-family: "NanumBarunpen", "Nanum Gothic", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+  letter-spacing: 0.03em;
+  font-size: 0.85rem;
   font-weight: 700;
   color: #9068be;
   background: none;
@@ -1705,9 +1767,10 @@ ul.category-list a:hover {
 ul.category-list li.category-list-item {
   overflow: hidden;
   width: 100%;
+  margin-left: 1rem;
 }
 ul.category-list .category-list-count {
-  font-size: 0.65rem;
+  font-size: 0.7rem;
   padding-left: 0.5em;
 }
 ul.category-list .category-list-count:before {
@@ -1716,11 +1779,10 @@ ul.category-list .category-list-count:before {
 ul.category-list .category-list-count:after {
   content: ")";
 }
-ul.category-list li:before {
-  float: left;
-  padding-right: 0.25rem;
-  content: "-";
-}
+/*  li:before
+    float: left
+    padding-right: .25rem
+    content: "-"*/
 article .content .eschocolat-profile > img {
   border-radius: 50%;
   max-width: 140px;
