@@ -147,6 +147,7 @@ article
 //       content: "|"
 
 .post-meta
+  font-family: $font-family-head
   margin-top: 4rem
   ul
     margin: 0
@@ -158,14 +159,15 @@ article
     -webkit-box-pack: justify
     -ms-flex-pack: justify
     justify-content: space-between
+    $post-meta-color= #6D6376
     li
-      color: #aaa
-      letter-spacing: -0.01em
-      font-size: 0.8rem
+      color: $post-meta-color
+      letter-spacing: .01em
+      font-size: 0.85rem
       &:not(:last-child)
         margin-bottom: 2rem
       a
-        color: #aaa
+        color: $post-meta-color
     div
       font-weight: 700
     // &:before

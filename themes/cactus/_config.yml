@@ -7,16 +7,19 @@
 # page within your website.
 projects_url: http://github.com/probberechts
 categories_url: /categories/
-archive_url: /logs/
+archive_url: /archives/
 
 # Configure the navigation menu.
 # A pair 'Key: url' will result in a link to 'url' with the name 'Key' in the
 # navigation menu. Optionally, you can add translations for the 'Key' in
 # languages/*.yml
 nav:
-  home: /
-  about: /about/
+  Home: /
+  Profile: /profile/
   Archives: /archives/
+  Tags: /tags/
+  # Github: https://github.com/eschocolat
+  # Rss: /atom.xml
   # Tags: /tags/
   # projects: projects_url
 
@@ -31,6 +34,7 @@ social_links:
 #  facebook: /
   linkedin: https://www.linkedin.com/in/jihoonleedaniel
   mail: mailto:eschocolat.lee@email.com
+  rss: /atom.xml
 
 
 # Customize the overview with the most recent blog posts on the index page.

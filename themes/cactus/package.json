@@ -39,7 +39,6 @@
   },
   "dependencies": {
     "fontawesome5-webfont": "^5.0.4",
-    "jquery": "^3.3.1",
-    "justifiedGallery": "^3.6.5"
+    "jquery": "^3.3.1"
   }
 }

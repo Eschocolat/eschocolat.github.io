@@ -4,7 +4,7 @@
 
 # Site
 title: Eschocolat
-subtitle:
+subtitle: Writing Developer
 description: 글쓰는 개발자. 꿈꾸는 일상 여행자.
 keywords:
 author: eschocolat
@@ -22,7 +22,7 @@ permalink_defaults:
 source_dir: source
 public_dir: public
 tag_dir: tags
-archive_dir: logs
+archive_dir: archives
 category_dir: categories
 code_dir: downloads/code
 i18n_dir: :lang
@@ -82,3 +82,10 @@ deploy:
   repo: https://github.com/eschocolat/eschocolat.github.io.git
 
 plugins: hexo-generator-cname
+
+feed:
+  type: atom
+  path: atom.xml
+  limit: false
+  hub:
+  content: true

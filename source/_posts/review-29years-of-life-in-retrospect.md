@@ -1,7 +1,9 @@
 ---
 title: '29살, 인생 돌아보기'
 date: 2017-03-02 09:40:25
-tag: 회고
+tag:
+- NAS
+- https
 category: 끄적임
 ---
 {% asset_img "train.jpg" "train" %}

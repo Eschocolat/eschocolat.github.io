@@ -1,6 +1,6 @@
 nav:
   home: Home
-  about: About
+  about: Profile
   articles: Logs
   projects: Projects
   search: Search
@@ -12,7 +12,7 @@ index:
   find_me_on: ' '
   enum_comma: ' '
   enum_and: ' '
-  articles: Logs
+  articles: Latest
   categories: Categories
   projects: Projects
 
@@ -37,3 +37,7 @@ pagination:
 
 comments:
   no_js: Please enable JavaScript to view the comments.
+
+title:
+  categories: Category List
+  tags: Tag List

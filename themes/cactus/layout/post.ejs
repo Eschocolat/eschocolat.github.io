@@ -1,6 +1,7 @@
 <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
   <header>
     <%- partial('_partial/post/category', { post: page }) %>
+    <%- partial('_partial/post/date', { post: page, class_name: 'meta', date_format: 'MMM D, YYYY' }) %>
     <%- partial('_partial/post/title', { post: page, index: false, class_name: 'posttitle' }) %>
   </header>
   <%- partial('_partial/post/gallery') %>

@@ -12,6 +12,10 @@
           <a class="icon social-ic" target="_blank" href="<%- url_for(theme.social_links[link]) %>">
             <i class="fas fa-envelope"></i><!--
       ---></a><!--
+      ---><% } else if (link == 'rss') { %>
+          <a class="icon social-ic" target="_blank" href="<%- url_for(theme.social_links[link]) %>">
+            <i class="fas fa-rss-square"></i><!--
+      ---></a><!--
       ---><% } else { %>
           <a class="icon social-ic" target="_blank" href="<%- url_for(theme.social_links[link]) %>">
             <i class="fab fa-<%= link %>"></i><!--
