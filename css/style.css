@@ -320,6 +320,13 @@
   padding-right: 4rem;
   padding-left: 4rem;
 }
+.content .es-tag {
+  margin-bottom: 0.5rem;
+}
+.content .es-tag span.sub {
+  color: #666;
+  font-size: 75%;
+}
 .content h1,
 .content .h1 {
   font-family: "NanumBarunpen", NanumBarunpen, "Nanum Gothic", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
@@ -340,7 +347,7 @@
   position: relative;
   display: block;
   margin-top: 2rem;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
   color: #9068be;
   text-transform: none;
   letter-spacing: 0.03em;
@@ -357,7 +364,6 @@
 .content h5,
 .content h6 {
   display: inline;
-  border-bottom: 1px dashed #71a2b6;
   color: #71a2b6;
   text-decoration: none;
   font-weight: normal;
@@ -470,18 +476,6 @@
   src: url("../lib/nanum-square/NanumSquareB.eot");
   src: url("../lib/nanum-square/NanumSquareB.eot?#iefix") format('embedded-opentype'), url("../lib/nanum-square/NanumSquareB.woff") format('woff'), url("../lib/nanum-square/NanumSquareB.ttf") format('truetype');
 }
-@font-face {
-  font-family: 'NanumSquare';
-  font-weight: 800;
-  src: url("../lib/nanum-square/NanumSquareEB.eot");
-  src: url("../lib/nanum-square/NanumSquareEB.eot?#iefix") format('embedded-opentype'), url("../lib/nanum-square/NanumSquareEB.woff") format('woff'), url("../lib/nanum-square/NanumSquareEB.ttf") format('truetype');
-}
-@font-face {
-  font-family: 'NanumSquare';
-  font-weight: 300;
-  src: url("../lib/nanum-square/NanumSquareL.eot");
-  src: url("../lib/nanum-square/NanumSquareL.eot?#iefix") format('embedded-opentype'), url("../lib/nanum-square/NanumSquareL.woff") format('woff'), url("../lib/nanum-square/NanumSquareL.ttf") format('truetype');
-}
 *,
 *:before,
 *:after {
@@ -538,6 +532,12 @@ body {
   .page {
     margin: 4px 0 0;
   }
+}
+.content-wrapper {
+  height: 100%;
+}
+.content {
+  min-height: calc(100% - 44px);
 }
 .content .ca-year,
 .content .index-year {
@@ -1113,6 +1113,9 @@ body {
 .post-list {
   padding: 0;
 }
+.post-list h2 {
+  margin-top: 1.2rem;
+}
 .post-list .post-item {
   margin-bottom: 1rem;
   margin-left: 0;
@@ -1142,17 +1145,20 @@ body {
 .project-list .project-item {
   margin-bottom: 5px;
 }
-article header .posttitle {
+article header.posttitle {
   margin-top: 0;
-  margin-bottom: 3.8rem;
+  margin-bottom: 2.8rem;
+}
+article header.posttitle h1.h1 {
+  margin: 0 0 0.4rem;
   text-transform: none;
   font-size: 1.35em;
   line-height: 1.25;
 }
-article header .category-meta {
+article header.posttitle .category-meta {
   margin-bottom: 0;
 }
-article header .category-meta a {
+article header.posttitle .category-meta a {
   font-family: "NanumBarunpen", NanumBarunpen, "Nanum Gothic", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
   font-size: 0.84rem;
   letter-spacing: 0.03em;
@@ -1160,26 +1166,31 @@ article header .category-meta a {
   color: #9068be;
   background: none;
 }
-article header .category-meta a:hover {
+article header.posttitle .category-meta a:hover {
   background-image: linear-gradient(transparent, transparent 5px, #9068be 5px, #9068be);
   background-position: bottom;
   background-size: 100% 6px;
   background-repeat: repeat-x;
 }
-article header .meta {
+article header.posttitle .meta {
   margin-top: 0;
   margin-bottom: 1rem;
 }
-article header .meta * {
+@media (min-width: 480px) {
+  article header.posttitle .meta .fa-tag {
+    margin-left: 0.6rem;
+  }
+}
+article header.posttitle .meta * {
   color: #71a2b6;
   font-size: 0.85rem;
 }
-article header .author {
+article header.posttitle .author {
   text-transform: uppercase;
   letter-spacing: 0.01em;
   font-weight: 700;
 }
-article header .postdate {
+article header.posttitle .postdate {
   display: inline;
 }
 @media (max-width: 479px) {
@@ -1276,7 +1287,7 @@ article .content .caption {
   text-align: center;
   font-size: 0.9em;
 }
-.posttitle {
+.posttitle h1 {
   text-transform: none;
   font-size: 1.5em;
   line-height: 1.25;
@@ -1286,6 +1297,11 @@ article .content .caption {
   background-position: bottom;
   background-size: 100% 6px;
   background-repeat: repeat-x;
+}
+@media (min-width: 480px) {
+  .article-tag {
+    display: inline;
+  }
 }
 .post-meta {
   font-family: "NanumBarunpen", NanumBarunpen, "Nanum Gothic", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
@@ -1342,7 +1358,7 @@ article .content .caption {
 }
 #archive .post-list .post-item .meta {
   display: block;
-  margin-right: 8px;
+  margin-right: 16px;
   min-width: 70px;
   color: #666;
   font-size: 14px;
@@ -1369,8 +1385,8 @@ article .content .caption {
   color: #666;
   vertical-align: top;
   text-align: center;
-  font-size: 12px;
-  letter-spacing: -0.3px;
+  font-size: 13px;
+  letter-spacing: 0.3px;
 }
 #footer ul {
   margin: 0;
@@ -1665,6 +1681,7 @@ code {
   width: 100%;
   max-width: 72rem;
   box-sizing: border-box;
+  margin-top: 2rem;
 }
 .related-posts h3 {
   font-size: 0.8rem;
@@ -1792,18 +1809,17 @@ article .content .eschocolat-profile > img {
   max-width: 140px;
 }
 .archives-tags-wrap > a {
-  display: inline-block;
+  background: #f5f5f5;
+  display: block;
+  float: left;
+  font-size: 11px;
+  margin: 0 8px 8px 0;
   padding: 4px 13px;
-  border-radius: 34px;
-  border: 1px solid #f0f0f0;
-  background: none;
-  background-color: #f0f0f0;
-  color: #666;
-  margin: 0 6px 10px 0;
+  -webkit-transition: background-color 0.3s ease, color 0.3s ease;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 .archives-tags-wrap > a:hover {
-  color: #71a2b6;
-  border-color: #71a2b6;
-  background: inherit;
+  color: #fff;
+  background: #b79dd5;
   text-decoration: none;
 }
