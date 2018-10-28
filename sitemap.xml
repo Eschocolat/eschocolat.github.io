@@ -2,9 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://eschocolat.me/why-i-became-a-developer/</loc>
+    
+    <lastmod>2018-10-28T18:06:03.888Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://eschocolat.me/review-29years-of-life-in-retrospect/</loc>
     
-    <lastmod>2018-10-24T19:16:47.429Z</lastmod>
+    <lastmod>2018-10-28T18:03:39.852Z</lastmod>
     
   </url>
   
@@ -19,13 +26,6 @@
     <loc>https://eschocolat.me/support-nas-external-connection-https/</loc>
     
     <lastmod>2018-10-24T17:39:46.393Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://eschocolat.me/why-i-became-a-developer/</loc>
-    
-    <lastmod>2018-10-24T17:39:46.375Z</lastmod>
     
   </url>
   

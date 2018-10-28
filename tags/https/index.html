@@ -71,7 +71,7 @@
        
         <li><a href="/profile/">Profile</a></li>
        
-        <li><a href="/archives/">Archives</a></li>
+        <li><a href="/articles/">Articles</a></li>
       
     </ul>
   </div>
@@ -82,12 +82,10 @@
     
         <section id="tagslist">
             <div class="archives-tags-wrap clearfix">
-                
-                    <a href="/tags/NAS/" style="font-size: 14px;">NAS</a> <a href="/tags/https/" style="font-size: 14px;">https</a> <a href="/tags/개발자/" style="font-size: 14px;">개발자</a> <a href="/tags/회고/" style="font-size: 14px;">회고</a>
-                
+                <!--<a href="/tags/NAS/" style="font-size: 14px;">NAS</a> <a href="/tags/https/" style="font-size: 14px;">https</a> <a href="/tags/끄적임/" style="font-size: 14px;">끄적임</a> <a href="/tags/회고/" style="font-size: 14px;">회고</a>-->
+                <a class="tag-link" href="/tags/끄적임/">끄적임<span class="tag-count">1</span></a><a class="tag-link" href="/tags/NAS/">NAS<span class="tag-count">1</span></a><a class="tag-link" href="/tags/https/">https<span class="tag-count">1</span></a><a class="tag-link" href="/tags/회고/">회고<span class="tag-count">1</span></a>
             </div>
         </section>
-        <h1 class="es-tag">#https <span class="sub">(1)</span></h1>
     
     <ul class="post-list">
         
@@ -100,25 +98,41 @@
                 <h2>2017</h2>
             
             <li class="post-item">
-                
+    
     <div class="meta">
         <time datetime="2017-03-04T19:06:35.000Z" itemprop="datePublished">2017-03-05</time>
     </div>
 
 
-                <span>
+    
+    <span>
     
         <a class="" href="/support-nas-external-connection-https/">NAS 외부 접속 https 지원하기</a>
     
 
 
 </span>
-            </li>
+    <!--<span class="post-item-comment">
+    <a href="/support-nas-external-connection-https/#disqus_thread">(0)</a>
+
+
+
+</span>-->
+</li>
         
     </ul>
     
 
 </div>
+
+    <script src="/lib/jquery/jquery.min.js"></script>
+    <script type="text/javascript">
+      var tagname = 'https';
+      $(document).ready(function () {
+        $('#tagslist > .archives-tags-wrap > a:contains(' + tagname + ')').addClass('selected');
+      });
+    </script>
+
         </div>
         <footer id="footer">
   <div class="footer-left">
@@ -132,7 +146,7 @@
          
           <li><a href="/profile/">Profile</a></li>
          
-          <li><a href="/archives/">Archives</a></li>
+          <li><a href="/articles/">Articles</a></li>
         
       </ul>
     </nav>
