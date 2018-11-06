@@ -1653,9 +1653,16 @@ pre code {
   border: none;
 }
 code {
-  background: #efecf4;
-  padding: 3px 4px;
-  margin: 0 2px;
+  padding: 1px 3px;
+  font-family: Menlo, "Liberation Mono", Consolas, Courier, monospace;
+  font-size: 0.85em;
+  white-space: pre-wrap;
+  border: #ececf0 1px solid;
+  background: #ffe2e5;
+  border-radius: 2px;
+  -webkit-font-feature-settings: "liga" 0;
+  -moz-font-feature-settings: "liga" 0;
+  font-feature-settings: "liga" 0;
 }
 .highlight {
   overflow-x: auto;
